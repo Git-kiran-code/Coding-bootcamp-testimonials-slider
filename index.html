@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coding Bootcamp Testimonials Slider</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+  <h1>Coding BootCamp Testimonials Slider</h1>
+  <p> Real stories from our successful graduates</p>
+</div>
+<div class="plus-wrapper">
+  <span class="add-label">ADD</span>
+  <button id="add-btn" class="add-btn" title="Add New Testimonial">
+    <i class="fas fa-plus"></i>
+  </button>
+</div>
+
+
+  
+  <div class="slider">
+    <div class="testimonial-container">
+      
+    </div>
+    <div class="arrow-container">
+    <button id="prev" class="arrow">&#10094;</button>
+    <button id="next" class="arrow">&#10095;</button>
+</div>
+  </div>
+
+  <div class="share-form"  style="display:none">
+    <h2>Share Your Story</h2>
+    <form id="testimonialForm">
+        <div class="form-group">
+      <label>Name</label>
+      <input type="text" id="name" placeholder="Your Name" >
+      <span class="error" id="name-error"></span>
+    </div>
+    <div class="form-group">
+      <label>Role Name</label>
+      <input type="text" id="role" placeholder="Role Name">
+      <span class="error" id="role-error"></span>
+    </div>
+    <div class="form-group">
+      <label>Image File Name (e.g. your-photo.jpg)</label>
+      <input type="file" id="image" placeholder="your-photo.jpg" >
+      <span class="error" id="image-error"></span>
+    </div>
+    <div class="form-group">
+      <label>Testimonial </label>
+      <textarea id="text" rows="4" placeholder="Your testimonial..." style="width:95%;"></textarea>
+      <span class="error" id="text-error"></span>
+    </div>
+    <div class="form-group">
+      <button type="submit">Add Testimonial</button>
+    </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+body {
+  background: url('background4.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 2rem;
+  font-family: sans-serif;
+  text-align: center;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  
+  color: #0c0c0c;
+  text-align: center;
+}
+
+.header h1{
+  font-family: 'Segoe UI', sans-serif;
+  font-size:2.8rem;
+  font-weight:700;
+    text-align: center;
+  margin:0;
+  text-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+}
+.header p{
+  font-family:'Segoe UI', sans-serif;
+  font-size:1.2rem;
+  margin-top: 1rem;
+  text-align: center;
+  color:#0c0c0c;
+}
+.slider {
+  position: relative;
+  max-width: 800px;
+  margin: 1rem auto;
+  background: #ffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(10, 226, 35, 0.1);
+  overflow: hidden;
+  padding-bottom: 3rem;
+}
+
+.testimonial-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+  position: relative;
+  background: url('background2.jpg') no-repeat center center;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 1rem;
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #0e0101;
+}
+
+.testimonial::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+ 
+  border-radius: 10px;
+}
+
+.testimonial .text,
+.testimonial img {
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial img {
+  max-width: 40%;
+  border-radius: 10px;
+}
+
+.text {
+  max-width: 55%;
+  text-align: left;
+}
+
+.arrow-container {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.arrow {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+
+.arrow:disabled {
+  color: grey;
+}
+
+.arrow:hover {
+  color: #3f0cb2;
+}
+
+.share-form {
+  margin: 2rem auto;
+  background: rgba(123, 97, 255, 0.2); /* purple-ish tone with transparency */
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* subtle border */
+}
+
+
+.share-form h2 {
+  margin-bottom: 20px;
+  color: #7c31a7 ;
+  text-decoration: underline;
+  
+}
+.share-form label{
+  color:#8d3dbb ;
+  text-align: left;
+}
+.share-form input{
+  color:#0b0b0b;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f5e5e5; 
+  color: #333;
+  font-size: 1rem;
+}
+
+
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: #6200ff66;
+  color: #0e0e0e;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-group button:hover {
+  background-color: linear-gradient(90deg,#a262e3,#8e9efc);
+}
+
+.header {
+  text-align: center;
+}
+
+.plus-wrapper {
+  text-align: right;
+  padding-right: 25%;
+}
+
+.add-btn {
+  background: #6bcbee;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: x-small;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: red;
+}
